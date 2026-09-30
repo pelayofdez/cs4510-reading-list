@@ -4,7 +4,6 @@
   #header { padding: 0 12px !important; }
   #main .doc, .code, .code-space, .code-tight { width: auto !important; max-width: 100% !important; }
   .code, pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  #logoinheader img { max-width: 100%; height: auto; }
-  #menu { padding-left: 0; }
   img { max-width: 100%; height: auto; }
+  #menu { padding-left: 0; }
 }

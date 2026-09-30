@@ -1,1 +1,115 @@
-<!DOCTYPE html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=toc.html"><title>Formal Reasoning</title><a href="toc.html">Table of contents</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CS4510 Reading List</title>
+<style>
+:root { --bg:#f7f7f5; --card:#ffffff; --fg:#1d1d1f; --muted:#62636a; --line:#e3e3e0; --accent:#3a5bd9; --pill:#eef1fc; --warn:#8a5a00; --warnbg:#fff4dc; }
+@media (prefers-color-scheme: dark) { :root { --bg:#141416; --card:#1d1e21; --fg:#ececef; --muted:#a0a1a8; --line:#2d2e33; --accent:#8ea6ff; --pill:#262b3d; --warn:#f3c56b; --warnbg:#332812; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+a { color: var(--accent); }
+header h1 { font-size: 1.6rem; margin: 0 0 4px; }
+header p { margin: 4px 0; color: var(--muted); }
+nav { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 8px; }
+h2 { font-size: 1.15rem; margin: 32px 0 12px; }
+.ch { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:0 0 12px; }
+.ch h3 { margin:0; font-size:1.05rem; }
+.ch h3 a { text-decoration:none; }
+.file { color:var(--muted); font-weight:400; font-size:.85rem; margin-left:6px; }
+.note { color:var(--muted); margin:6px 0 0; font-size:.95rem; }
+.warn { background:var(--warnbg); color:var(--warn); padding:8px 12px; border-radius:8px; font-size:.95rem; }
+.links { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.pill { background:var(--pill); padding:4px 12px; border-radius:999px; text-decoration:none; font-size:.9rem; }
+details { margin-top:10px; }
+summary { cursor:pointer; font-weight:600; font-size:.95rem; }
+details ul { margin:6px 0 0; padding-left:20px; }
+code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size:.88em; }
+footer { margin-top:40px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>CS4510 Reading List</h1>
+  <p>Formal Reasoning about Software, TU Delft 2026/27 Q1: the chapters on the work plan, from the course's own copy of <em>Software Foundations</em> (version 6.7).</p>
+  <p>Snapshot of the <a href="https://cs4510.pages.ewi.tudelft.nl/workplan/">official work plan</a> as of 30 Sep 2026. It is updated on a rolling basis, so check there for changes.</p>
+</header>
+<nav><a class="pill" href="toc.html">Table of contents</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/">Course site</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/project/">Project</a></nav>
+<section><h2>Week 1</h2><article class="ch">
+  <h3><a href="Preface.html">Preface</a> <span class="file">Preface</span></h3>
+  <p class="note">You can ignore the information about course management; it doesn't apply to this course.</p>
+  
+  
+</article><article class="ch">
+  <h3><a href="Basics.html">Functional Programming in Coq</a> <span class="file">Basics</span></h3>
+  
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Basics_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/basics.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/180188/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li><code>andb_true_elim2</code></li></ul></details>
+</article><p class=note>Also: <a href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/intro.pdf">introductory slides</a>.</p></section><section><h2>Week 2</h2><article class="ch">
+  <h3><a href="Induction.html">Proof by Induction</a> <span class="file">Induction</span></h3>
+  
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Induction_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/induction.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/180204/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li>All 1★ and 2★ exercises</li></ul></details>
+</article><article class="ch">
+  <h3><a href="Lists.html">Working with Structured Data</a> <span class="file">Lists</span></h3>
+  
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Lists_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/lists.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/181681/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li>All 1★ and 2★ exercises</li></ul></details>
+</article><article class="ch">
+  <h3><a href="Poly.html">Polymorphism and Higher-Order Functions</a> <span class="file">Poly</span></h3>
+  <p class="note">The <a href="Poly.html#lab151">Church Numerals</a> section is out of scope.</p>
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Poly_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/poly.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/181698/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li>All 1★ and 2★ exercises (except Church Numerals)</li></ul></details>
+</article><article class="ch">
+  <h3><a href="Tactics.html">More Basic Tactics</a> <span class="file">Tactics</span></h3>
+  <p class="note">Self-study.</p>
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Tactics_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/tactics.pdf">Slides</a></div>
+  <details open><summary>Exercises</summary><ul><li>Get acquainted with the other tactics: read everything and do the 1★ exercises, but don't dwell on difficult things</li></ul></details>
+</article></section><section><h2>Week 3</h2><article class="ch">
+  <h3><a href="Logic.html">Logic in Coq</a> <span class="file">Logic</span></h3>
+  
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Logic_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/logic.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/182446/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li><code>and_assoc</code></li><li><code>contrapositive</code></li><li><code>de_morgan_not_or</code></li><li>(extra) <code>or_distributes_over_and</code></li><li><code>dist_exists_or</code></li><li><code>In_app_iff</code></li><li><code>logical_connectives</code> (<code>andb_true_iff</code> and <code>orb_true_iff</code>)</li></ul></details>
+</article></section><section><h2>Week 4</h2><article class="ch">
+  <h3><a href="IndProp.html">Inductively Defined Propositions</a> <span class="file">IndProp</span></h3>
+  <p class="note">Focus on: <a href="IndProp.html#lab227">Inductively Defined Propositions</a>, <a href="IndProp.html#lab236">Using Evidence in Proofs</a>, <a href="IndProp.html#lab245">Inductive Relations</a> (called “Exercising with Inductive Relations” in the work plan), <a href="IndProp.html#lab262">Case Study: Improving Reflection</a>.</p>
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/IndProp_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/indprop.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/182509/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li><code>ev_sum</code></li><li><code>total_relation</code> (<code>total_relation</code> and <code>total_relation_is_total</code>)</li><li><code>empty_relation</code> (<code>empty_relation</code> and <code>empty_relation_is_empty</code>)</li><li><code>reflect_iff</code></li></ul></details>
+</article><article class="ch">
+  <h3><a href="Maps.html">Total and Partial Maps</a> <span class="file">Maps</span></h3>
+  <p class="note">Focus on <a href="Maps.html#lab284">Total Maps</a>.</p>
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Maps_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/maps.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/182525/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li>All exercises</li></ul></details>
+</article></section><section><h2>Week 5</h2><p class=warn>Tentative: the course may still change this plan.</p><article class="ch">
+  <h3><a href="Imp.html">Simple Imperative Programs</a> <span class="file">Imp</span></h3>
+  
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/lf/Imp_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/imp.pdf">Slides</a><a class="pill" href="https://weblab.tudelft.nl/cs4510/2026-2027/assignment/182653/info">WebLab</a></div>
+  <details open><summary>Exercises</summary><ul><li>Define the fixpoint <code>optimize_0plus_b</code></li><li>Prove it sound (<code>optimize_0plus_b_sound</code>) twice: manually with no automation, then with tacticals as short and elegant as possible</li><li><code>XtimesYinZ_spec</code></li><li><code>loop_never_stops</code></li><li><code>no_whiles_eqv</code></li></ul></details>
+</article><article class="ch">
+  <h3><a href="Hoare.html">Hoare Logic, Part I</a> <span class="file">Hoare</span></h3>
+  <p class="note">Read the whole chapter; in particular, step through the Rocq proofs of the Hoare logic proof rules.</p>
+  <div class="links"><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/shorts/plf/Hoare_short.v">Short .v</a><a class="pill" href="https://cs4510.pages.ewi.tudelft.nl/assets/slides/hoare.pdf">Slides</a></div>
+  <details open><summary>Exercises</summary><ul><li>Read <a href="Hoare.html#lab62">Skip</a>, <a href="Hoare.html#lab63">Sequencing</a> and <a href="Hoare.html#lab64">Assignment</a> in <a href="Hoare.html#lab61">Proof Rules</a></li><li><code>hoare_asgn_examples1</code></li><li><code>hoare_asgn_examples2</code></li><li><code>hoare_asgn_wrong</code></li><li><code>hoare_asgn_fwd</code></li><li><code>hoare_asgn_fwd_exists</code></li></ul></details>
+</article></section><section><h2>Coming up</h2><article class="ch">
+  <h3><a href="Rel.html">Properties of Relations</a> <span class="file">Rel</span></h3>
+  <p class="note">On the course roadmap (specification and proofs); not in a weekly plan yet.</p>
+  
+  
+</article><article class="ch">
+  <h3><a href="Hoare2.html">Hoare Logic, Part II</a> <span class="file">Hoare2</span></h3>
+  <p class="note">On the course roadmap (Hoare logic); not in a weekly plan yet.</p>
+  
+  
+</article></section><section><h2>Extra</h2><article class="ch">
+  <h3><a href="IndPrinciples.html">Induction Principles</a> <span class="file">IndPrinciples</span></h3>
+  <p class="note">Not in the work plan or roadmap.</p>
+  
+  
+</article></section>
+<footer>Book content © Benjamin C. Pierce et al., <a href="https://softwarefoundations.cis.upenn.edu">Software Foundations</a>, redistributed under the MIT <a href="LICENSE">license</a>. Short versions, slides and exercise lists belong to the CS4510 course team and are linked from the course site, not copied here.</footer>
+</main>
+</body>
+</html>
